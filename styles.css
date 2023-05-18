@@ -1,0 +1,204 @@
+
+header {
+  border-bottom: 10px solid black;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+body {
+	
+/*   font-family: "Helvetica Neue", Arial, sans-serif;*/
+  font-family: 'Play', sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  color: #333;
+  background: linear-gradient(to right, #00BFA6, #2978B5, #FFC107);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0; /* Added to reset default margin */
+  padding: 20px; /* Added to reset default padding */
+}
+
+
+.top-bar {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40x;
+  z-index: 999; /* Ensure the top bar is on top of the body content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+#project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 80px;
+}
+
+
+.socials {
+  display: flex;
+  gap: 5px;
+  margin-right: auto; /* Pushes the social links to the right */
+}
+
+.social-icon svg {
+  width: 25x; /* Adjust the size as needed */
+  height: 25px;
+}
+
+.title-block {
+  text-align: left; /* Aligns the title to the left */
+  margin-left: 0x; /* Adds a buffer on the left side */
+  margin-right: 50px; /* Adds a buffer on the right side */
+  margin-left: 50px;
+  margin-bottom: 10px; /* Add margin to separate from social icons */
+}
+
+.title-block h1,
+.title-block p {
+  line-height: 0;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+
+.logo img {
+  height: 40px;
+  margin: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.navbar a {
+  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 150px; /* Add margin to push the body content below the top bar */
+}
+
+a {
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 8px;
+  border: 10px solid black;
+  flex: 1 0 calc(20% - 40px);
+  max-width: calc(20% - 40px);
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Center content vertically */
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card-content {
+  font-size: 12px;
+  line-height: 1.2;
+  height: 85px; /* Set the height of the text area */
+  overflow: hidden; /* Hide any overflow content */
+}
+
+.card p.card-content {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card img.demo {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+}
+
+@media (max-width: 650px) {
+  .card {
+    width: 100%;
+  }
+}
+
+img.demo {
+  filter: brightness(150%);
+  filter: contrast(120%);
+  filter: drop-shadow(5px 5px 5px rgb(55, 54, 54));
+}
+
+.tag {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+
+.card img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 650px) {
+  .card {
+    width: 100%;
+    flex-basis: 100%; /* Added flex-basis property */
+    max-width: 75%; /* Added max-width property */
+  }
+}
+
+@media (min-width: 300px) {
+  .card {
+    min-width: 300px; /* Set minimum width for cards */
+  }
+}
+
+/***** Shake SVG adapted from https://codepen.io/Digitango/pen/YQQBXR *****/
+
+.wiggle:hover svg {
+  animation: wiggle 75ms infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes wiggle {
+  0% { transform: translate(2px, 0); }
+  50% { transform: translate(-2px, 0); }
+  100% { transform: translate(2px, 0); }
+}
