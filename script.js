@@ -76,3 +76,19 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error('Error:', error);
     });
 });
+
+// Clear wiggle on mobile
+window.addEventListener('load', function() {
+  var socialIcons = document.querySelectorAll('.social-icon');
+
+  // Add event listener to each social icon
+  socialIcons.forEach(function(icon) {
+    icon.addEventListener('mouseover', function() {
+      this.classList.add('wiggle');
+    });
+
+    icon.addEventListener('mouseout', function() {
+      this.classList.remove('wiggle');
+    });
+  });
+});
