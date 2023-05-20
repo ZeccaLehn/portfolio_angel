@@ -2,7 +2,8 @@
 header {
   border-bottom: 10px solid black;
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adjust the values to increase intensity */
 }
 
 body {
@@ -32,7 +33,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
 }
 
 #project-container {
@@ -40,7 +41,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  padding: 80px;
+  padding: 100px;
+}
+
+/* Padding between header and card */
+.container {
+  margin: 200px;
 }
 
 
@@ -120,6 +126,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Center content vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adjust the values to increase intensity */
 }
 
 .card h3 {
@@ -187,6 +194,16 @@ img.demo {
 @media (min-width: 300px) {
   .card {
     min-width: 300px; /* Set minimum width for cards */
+  }
+}
+
+/***** Fix for Galaxy Fold *****/
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 100%;
+    max-width: 300%;
+    /* Adjust the height as needed */
+    width: 700px;
   }
 }
 

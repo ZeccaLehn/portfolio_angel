@@ -84,11 +84,21 @@ window.addEventListener('load', function() {
   // Add event listener to each social icon
   socialIcons.forEach(function(icon) {
     icon.addEventListener('mouseover', function() {
-      this.classList.add('wiggle');
+      if (window.innerWidth > 768) {
+        this.classList.add('wiggle');
+      }
     });
 
     icon.addEventListener('mouseout', function() {
-      this.classList.remove('wiggle');
+      if (window.innerWidth > 768) {
+        this.classList.remove('wiggle');
+      }
+    });
+
+    icon.addEventListener('click', function() {
+      if (window.innerWidth <= 768) {
+        this.classList.remove('wiggle');
+      }
     });
   });
 });
