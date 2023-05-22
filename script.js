@@ -43,30 +43,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Retrieve SDGs value and split into array
         // const sdgs = project.sdgs ? project.sdgs.split('/') : [];
+        console.log(project.url);
 
         // Generate project card HTML
         const projectCard = `
-          <div class="card">
-            <a target="_blank" href="${project.url}">
+        <div class="card">
+          <a target="_blank" href="${project.url}">
+            <div class="zoom">
               <img class="demo" src="images/${project.image}" alt="${project.name}">
-            </a>
-            <div>
-              <h3>
-                <a target="_blank" href="${project.url}">${project.name}</a>
-              </h3>
-              <p class="card-content">${project.content}</p>
-              <div class="tags">
-                <span class="tag">${project.stage}</span>
-                <span class="tag">${project.year}</span>
-                <span class="tag">${project.role}</span>
-                <span class="tag">SDGs: ${project.sdgs}</span>
-               
-              </div>
+            </div>
+          </a>
+          <div>
+            <h3>
+              <a target="_blank" href="${project.url}">${project.name}</a>
+            </h3>
+            <p class="card-content">${project.content}</p>
+            <div class="tags">
+              <span class="tag">${project.stage}</span>
+              <span class="tag">${project.year}</span>
+              <span class="tag">${project.role}</span>
+              <span class="tag">SDG: ${project.sdgs}</span>
             </div>
           </div>
-        `;
+        </div>
+      `;
 
-        html += projectCard;
+      html += projectCard;
       }
 
       // Insert generated HTML into the project container
@@ -103,3 +105,24 @@ window.addEventListener('load', function() {
   });
 });
 
+// Burgerbar
+// JavaScript code
+document.querySelector('.burger').addEventListener('click', function() {
+  document.querySelector('.menu').classList.toggle('active');
+});
+
+// JavaScript to toggle the menu active class
+const burgerBar = document.querySelector('.burger-bar');
+const menu = document.querySelector('.menu');
+
+burgerBar.addEventListener('click', function() {
+  menu.classList.toggle('active');
+});
+
+// JavaScript to toggle the active class on the navbar when the burger bar is clicked
+var navbar = document.querySelector('.navbar');
+var burger = document.querySelector('.burger');
+
+burger.addEventListener('click', function() {
+  menu.classList.toggle('active');
+});

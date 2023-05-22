@@ -1,0 +1,21 @@
+<nav class="navbar">
+    <div class="burger">
+      <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <rect class="bar" x="2" y="6" width="20" height="2"></rect>
+        <rect class="bar" x="2" y="12" width="20" height="2"></rect>
+        <rect class="bar" x="2" y="18" width="20" height="2"></rect>
+      </svg>
+    </div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li> <!-- Menu item: Home -->
+      <li><a href="#">About</a></li> <!-- Menu item: About -->
+      <li><a href="#">Projects</a></li> <!-- Menu item: Projects -->
+      <li><a href="#">Contact</a></li> <!-- Menu item: Contact -->
+    </ul>
+  </nav>
+  <nav class="navbar" id="original-navbar">
+    <a href="#">Home</a> <!-- Menu item: Home -->
+    <a href="#">About</a> <!-- Menu item: About -->
+    <a href="#">Projects</a> <!-- Menu item: Projects -->
+    <a href="#">Contact</a> <!-- Menu item: Contact -->
+  </nav>
