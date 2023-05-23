@@ -110,7 +110,7 @@ a {
 .card {
   padding: 15px; /* Decrease the padding to reduce overall size of the card */
   flex: 1 0 calc(25% - 30px); /* Adjust the flex property to control card width */
-  margin: 1px; /* Sets margin around the card */
+  margin: 3px; /* Sets margin around the card */
   border-radius: 8px; /* Adds border radius to the card */
   border: 11px solid black; /* Adds a black border to the card */
   max-width: calc(21% - 30px); /* Overrides the previous max-width */
@@ -183,9 +183,9 @@ img.demo {
 
 .card img {
   border-radius: 0px; /* Removes the border radius from the card image */
-  width: 100%; /* Sets the width of the card image to 100% */
+  width: 70%; /* Sets the width of the card image to 100% */
   height: auto; /* Sets the height of the card image to auto */
-  margin-bottom: 10px; /* Adds margin to the bottom of the card image */
+  margin-bottom: 5px; /* Adds margin to the bottom of the card image */
 }
 
 @media (min-width: 300px) {
@@ -219,7 +219,7 @@ img.demo {
 @keyframes wiggle {
   0% { transform: rotate(0deg); }
   20% { transform: rotate(-20deg); }
-  40% { transform: rotate(-20deg); }
+  40% { transform: rotate(-10deg); }
   60% { transform: rotate(-0deg); }
   80% { transform: rotate(10deg); }
   100% { transform: rotate(0deg); }
