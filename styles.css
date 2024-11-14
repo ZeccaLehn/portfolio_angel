@@ -152,11 +152,10 @@ a {
 
 .zoom {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: visible;
-  padding: 10px; /* Add consistent padding */
-  margin: 5px; /* Add margin for space around the image */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  overflow: hidden; /* Hide any overflow if necessary */
+  padding: 0; /* Remove any excess padding */
 }
 
 .zoom:hover img {
@@ -170,11 +169,11 @@ a {
   object-fit: contain;
 }
 
+
 .demo {
-  margin: 5px; /* Add space around the image */
-  width: 100%; /* Ensure it fits within the container */
-  height: auto;
-  object-fit: contain;
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits within the container */
 }
 
 img.demo {
