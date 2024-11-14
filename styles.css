@@ -248,6 +248,19 @@ img.demo {
   transition: all ease 300ms;
 }
 
+.zoom {
+  padding: 10px; /* Adds space around the image */
+  display: inline-block; /* Ensures the padding is applied around the image */
+  transition: transform 300ms ease; /* Smooth transition for the zoom effect */
+}
+
+.zoom img {
+  width: 100%; /* Makes the image fit the container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures the image covers the space without distortion */
+}
+
+
 /* CSS styles */
 .navbar {
   display: flex; /* Displays the navbar items in a row */
