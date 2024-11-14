@@ -253,12 +253,13 @@ img.demo {
   justify-content: center; /* Center the image horizontally */
   align-items: center; /* Center the image vertically */
   padding: 10px; /* Add padding around the image for spacing */
+  height: 100%; /* Ensure the container takes up the full height of its parent */
 }
 
 .zoom img {
-  width: 80%; /* Adjust the width of the image as needed */
-  height: auto; /* Maintain the aspect ratio */
-  object-fit: contain; /* Ensure the image is resized to fit within the container */
+  max-width: 100%; /* Ensure the image fits within the container */
+  max-height: 100%; /* Ensure the image fits within the container */
+  object-fit: contain; /* Maintain aspect ratio */
 }
 
 /* Add .demo class style here */
