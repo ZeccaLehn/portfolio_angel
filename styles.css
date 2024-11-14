@@ -1,246 +1,160 @@
 header {
-  border-bottom: 10px solid black; /* Adds a black solid border to the bottom of the header */
-  text-align: center; /* Centers the text in the header */
-  margin-bottom: 40px; /* Adds margin at the bottom of the header */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adds a box shadow with specified values */
-  min-height: 70px; /* Sets the width of the header to 100% */
+  border-bottom: 10px solid black;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  min-height: 70px;
 }
 
 body {
-  font-family: 'Play', sans-serif;  /* Sets the font family for the body */
-  font-size: 15px; /* Sets the font size for the body */
-  line-height: 1; /* Sets the line height for the body */
-  color: #333; /* Sets the color of the text in the body */
-  background: linear-gradient(to right, #00BFA6, #2978B5, #FFC107); /* Sets a linear gradient background */
-  background-repeat: no-repeat; /* Prevents background repetition */
-  background-attachment: fixed; /* Fixes the background position */
-  background-size: cover; /* Covers the entire background area */
-  margin: 0; /* Resets the default margin */
-  padding: 20px; /* Resets the default padding */
+  font-family: 'Play', sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  color: #333;
+  background: linear-gradient(to right, #00BFA6, #2978B5, #FFC107);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
 }
 
 .top-bar {
-  background-color: #fff; /* Sets the background color of the top bar */
-  position: fixed; /* Fixes the position of the top bar */
-  top: 0; /* Sets the top position of the top bar */
-  left: 0; /* Sets the left position of the top bar */
-  width: 100%; /* Sets the width of the top bar */
-  height: 40px; /* Sets the height of the top bar */
-  z-index: 999; /* Sets the z-index to ensure the top bar is on top of the body content */
-  display: flex; /* Displays the top bar as a flex container */
-  justify-content: space-between; /* Distributes the items in the top bar evenly */
-  align-items: center; /* Aligns the items vertically in the top bar */
-  padding: 10px; /* Adds padding to the top bar */
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 #project-container {
-  overflow: visible; /* Ensure shadows of cards are not clipped */
-  display: flex; /* Maintain flex layout */
-  flex-wrap: wrap; /* Allow wrapping of child elements */
-  justify-content: center; /* Center child elements */
-  gap: 10px; /* Add gap between child elements */
-  padding: 100px; /* Maintain padding */
+  overflow: visible;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 100px;
 }
 
 .container {
-  margin: 200px; /* Adds margin to create space between the header and the card */
+  margin: 200px;
 }
 
 .socials {
-  display: flex; /* Displays the social links as a flex container */
-  gap: 5px; /* Sets the gap between the social links */
-  margin-right: auto; /* Pushes the social links to the right */
+  display: flex;
+  gap: 5px;
+  margin-right: auto;
 }
 
 .social-icon svg {
-  width: 25px; /* Sets the width of the social icon */
-  height: 25px; /* Sets the height of the social icon */
+  width: 25px;
+  height: 25px;
 }
 
 .title-block {
-  text-align: left; /* Aligns the title to the left */
-  margin-left: 0px; /* Adds a buffer on the left side */
-  margin-right: 50px; /* Adds a buffer on the right side */
-  margin-left: 50px; /* Overrides the previous margin-left */
-  margin-bottom: 10px; /* Adds margin to separate from social icons */
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 .title-block h1,
 .title-block p {
-  line-height: 0; /* Sets the line height of the title and paragraph to 0 */
+  line-height: 0;
 }
 
 h1 {
-  font-size: 18px; /* Sets the font size for the h1 heading */
+  font-size: 18px;
 }
 
 .logo img {
-  height: 40px; /* Sets the height of the logo image */
-  margin: 10px; /* Adds margin around the logo image */
+  height: 40px;
+  margin: 10px;
 }
 
-/* CSS styles */
 .navbar {
-  display: flex; /* Displays the navbar items in a row */
-  align-items: center; /* Vertically aligns the navbar items */
-  height: 100%; /* Sets the height of the navbar */
-  padding: 0 20px; /* Adds horizontal padding to the navbar */
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
 }
 
 .navbar a {
-  color: #333; /* Sets the color of the navbar links */
-  font-family: "Helvetica Neue", Arial, sans-serif; /* Sets the font family for the navbar links */
-  font-size: 16px; /* Sets the font size for the navbar links */
-  margin-right: 20px; /* Adds right margin between the navbar links */
-  text-decoration: none; /* Removes underline from the navbar links */
+  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  margin-right: 20px;
+  text-decoration: none;
 }
 
 .row {
-  display: flex; /* Displays the row as a flex container */
-  flex-wrap: wrap; /* Allows the cards to wrap to the next line */
-  justify-content: center; /* Centers the cards horizontally */
-  align-items: flex-start; /* Aligns the cards to the top */
-  margin-top: 150px; /* Adds margin to push the body content below the top bar */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 150px;
 }
 
 a {
-  color: black; /* Sets the color of the links */
-  font-family: Arial, sans-serif; /* Sets the font family for the links */
+  color: black;
+  font-family: Arial, sans-serif;
 }
 
 .card-container {
-  overflow: visible; /* Ensure shadows are not clipped */
-  padding: 10px; /* Add padding to create space around cards */
+  overflow: visible;
+  padding: 10px;
 }
 
 .card {
-  padding: 15px; /* Decrease the padding to reduce overall size of the card */
-  flex: 1 0 calc(25% - 30px); /* Adjust the flex property to control card width */
-  margin: 10px; /* Increase margin to create more space around the card */
-  border-radius: 8px; /* Adds border radius to the card */
-  border: 11px solid black; /* Adds a black border to the card */
-  max-width: calc(21% - 30px); /* Overrides the previous max-width */
-  box-sizing: border-box; /* Includes border and padding in the total width and height */
-  background-color: #fff; /* Sets the background color of the card */
-  display: flex; /* Displays the card as a flex container */
-  flex-direction: column; /* Sets the flex direction to column */
-  justify-content: space-between; /* Centers content vertically */
-  position: relative; /* Ensure that shadows are rendered properly */
-  z-index: 1; /* Increase the z-index */
-  transform: translateZ(0); /* Forces new rendering layer */
-  will-change: transform; /* Helps with rendering optimization */
-  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* For iOS Safari */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adds a box shadow with specified values */
-  width: auto; /* Ensure the card can adjust naturally */
-  height: auto; /* Set a flexible height for the card */
-  
-  /* Media query for narrow browser width */
-  @media (max-width: 600px) {
-    min-width: 100%; /* Set the minimum width to 100% for narrow screens */
-  }
+  padding: 15px;
+  flex: 1 0 calc(25% - 30px);
+  margin: 10px;
+  border-radius: 8px;
+  border: 11px solid black;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  transform: translateZ(0);
+  will-change: transform;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  width: auto;
+  height: auto;
 }
 
-
 .card h3 {
-  font-size: 18px; /* Sets the font size for the heading inside the card */
-  margin-top: 10px; /* Adds margin to the top of the heading inside the card */
-  margin-bottom: 5px; /* Adds margin to the bottom of the heading inside the card */
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .card-content {
-  font-size: 12px; /* Sets the font size for the content inside the card */
-  line-height: 1.2; /* Sets the line height for the content inside the card */
-  height: 85px; /* Sets the height of the text area inside the card */
-  overflow: hidden; /* Hides any overflow content */
+  font-size: 12px;
+  line-height: 1.2;
+  height: 85px;
+  overflow: hidden;
 }
 
 .card p.card-content {
-  font-size: 14px; /* Sets the font size for the content inside the card */
-  margin-bottom: 10px; /* Adds margin to the bottom of the content inside the card */
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
-.card img.demo {
-  border-radius: 30px; /* Adds border radius to the demo image */
-  width: 100%; /* Sets the width of the demo image to 100% */
-  height: 100%; /* Sets the height of the demo image to 100% */
-  object-fit: cover; /* Maintains aspect ratio and covers the entire space */
-}
-
-@media (max-width: 650px) {
-  .card {
-    width: 100%; /* Sets the width of the card to 100% on smaller screens */
-  }
-}
-
-img.demo {
-  filter: brightness(150%); /* Adjusts the brightness of the demo image */
-  filter: contrast(120%); /* Adjusts the contrast of the demo image */
-  filter: drop-shadow(5px 5px 5px rgb(55, 54, 54)); /* Adds a drop shadow to the demo image */
-}
-
-.tag {
-  display: inline-block; /* Displays the tag as an inline block */
-  background-color: #f2f2f2; /* Sets the background color of the tag */
-  color: #333; /* Sets the color of the tag */
-  padding: 4px 8px; /* Adds padding to the tag */
-  font-size: 12px; /* Sets the font size for the tag */
-  margin-bottom: 4px; /* Adds margin to the bottom of the tag */
-  border-radius: 4px; /* Adds border radius to the tag */
-}
-
-.tags {
-  white-space: nowrap; /* Prevent tags from wrapping */
-}
-
-.card img {
-  border-radius: 0px; /* Removes the border radius from the card image */
-  width: 70%; /* Sets the width of the card image to 100% */
-  height: auto; /* Sets the height of the card image to auto */
-  margin-bottom: 5px; /* Adds margin to the bottom of the card image */
-}
-
-@media (min-width: 300px) {
-  .card {
-    min-width: 300px; /* Sets the minimum width for cards on larger screens */
-  }
-}
-
-/* Media query for small screens */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column; /* Changes the direction to vertical stack on small screens */
-    padding: 20px; /* Adds padding to the navbar for better spacing */
-  }
-
-  .navbar a {
-    margin-bottom: 10px; /* Adds bottom margin between the navbar links on small screens */
-  }
-}
-
-
-/* Fix for Galaxy Fold */
-@media only screen and (max-width: 800px) {
-  .card {
-    width: 100%; /* Sets the width of the card to 100% on Galaxy Fold */
-    max-width: 300%; /* Adjusts the max-width property */
-    width: 700px; /* Adjusts the width for Galaxy Fold */
-  }
-}
-
-@keyframes wiggle {
-  0% { transform: rotate(0deg); }
-  20% { transform: rotate(-20deg); }
-  40% { transform: rotate(-10deg); }
-  60% { transform: rotate(-0deg); }
-  80% { transform: rotate(10deg); }
-  100% { transform: rotate(0deg); }
-}
-
-
-/* Shake SVG adapted from https://codepen.io/Digitango/pen/YQQBXR */
-.wiggle:hover svg {
-  animation: wiggle 10ms infinite; /* Adds a wiggle animation to the SVG on hover */
-  animation-timing-function: linear; /* Sets the timing function for the animation */
+.zoom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
 }
 
 .zoom:hover img {
@@ -248,160 +162,178 @@ img.demo {
   transition: all ease 300ms;
 }
 
-.zoom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 15px; /* Add extra padding to the right */
-  padding-bottom: 15px; /* Add extra padding to the bottom */
-  overflow: visible; /* Ensure shadows aren't clipped */
-}
-
 .zoom img {
-  max-width: 100%; /* Ensure the image fits within the container */
-  max-height: 100%; /* Ensure the image fits within the container */
-  object-fit: contain; /* Maintain aspect ratio */
-}
-
-/* Add .demo class style here */
-.demo {
-  margin-right: 5px; /* Add margin to the right */
-  margin-bottom: 5px; /* Add margin to the bottom */
-  width: 80%; /* Adjust width if necessary */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
+.demo {
+  margin-right: 5px;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
 
-/* CSS styles */
-.navbar {
-  display: flex; /* Displays the navbar items in a row */
-  align-items: center; /* Vertically aligns the navbar items */
+img.demo {
+  filter: brightness(150%);
+  filter: contrast(120%);
+  filter: drop-shadow(5px 5px 5px rgb(55, 54, 54));
+}
+
+.tag {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+
+.tags {
+  white-space: nowrap;
+}
+
+.card img {
+  border-radius: 0px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 300px) {
+  .card {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar a {
+    margin-bottom: 10px;
+  }
+
+  .demo {
+    width: 70%;
+    margin-right: 3px;
+  }
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(-20deg); }
+  40% { transform: rotate(-10deg); }
+  60% { transform: rotate(0deg); }
+  80% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wiggle:hover svg {
+  animation: wiggle 10ms infinite;
+  animation-timing-function: linear;
 }
 
 .burger {
-  display: flex; /* Displays the burger icon as a flex container */
-  align-items: center; /* Vertically aligns the burger icon */
-  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
   justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
-  left: 20px; /* Move to the left by 20px */
   transform: translate(-50%, -50%);
   margin-right: 20px;
-  left: calc(50% - 20px); /* Shift to the left by 20px */
-
+  left: calc(50% - 20px);
 }
 
 .burger-icon {
-  width: 24px; /* Sets the width of the burger icon */
-  height: 24px; /* Sets the height of the burger icon */
-  fill: #333; /* Sets the color of the burger icon */
+  width: 24px;
+  height: 24px;
+  fill: #333;
 }
 
 .burger-menu {
   position: absolute;
-  top: 100%; /* Position the menu below the burger bar */
+  top: 100%;
   left: 0;
-  z-index: 999; /* Set a high z-index value to ensure the menu appears above other elements */
-  background-color: #fff; /* Adjust the background color as needed */
-  padding: 10px; /* Add padding to the menu for spacing */
-  display: none; /* Hide the menu by default */
+  z-index: 999;
+  background-color: #fff;
+  padding: 10px;
+  display: none;
 }
 
 .burger:hover + .burger-menu {
-  display: block; /* Show the menu when hovering over the burger bar */
+  display: block;
 }
 
 .menu {
-  display: none; /* Hides the menu items by default */
-  list-style-type: none; /* Removes the default bullet points */
-  padding: 0; /* Removes padding from the menu */
-  margin: 0; /* Removes margin from the menu */
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu li {
-  margin-bottom: 10px; /* Adds bottom margin between the menu items */
+  margin-bottom: 10px;
 }
 
 .menu li a {
-  color: #333; /* Sets the color of the menu links */
-  text-decoration: none; /* Removes underline from the menu links */
+  color: #333;
+  text-decoration: none;
 }
 
-/* Media query for small screens */
 @media (max-width: 600px) {
   .menu {
-    display: block; /* Displays the menu items as a vertical list on small screens */
+    display: block;
   }
 
   .burger {
-    margin-right: 10px; /* Adds right margin between the burger icon and menu on small screens */
+    margin-right: 10px;
   }
 }
 
-
-/* CSS for larger screens */
 .top-bar .burger-bar {
-  display: none; /* Hide the burger bar by default for larger screens */
+  display: none;
 }
 
-/* CSS for larger screens */
-.menu {
-  display: flex; /* Display the menu items as a row by default */
-}
-
-/* CSS for smaller screens */
 @media (max-width: 768px) {
   .menu {
-    display: none; /* Hide the menu items by default for smaller screens */
+    display: none;
   }
 
   .menu.active {
-    display: flex; /* Display the menu items when the menu is active */
-    flex-direction: column; /* Display the menu items as a column */
+    display: flex;
+    flex-direction: column;
   }
 }
 
-/* CSS for larger screens */
 @media (min-width: 768px) {
   .burger {
-    display: none; /* Hide the burger bar for larger screens */
+    display: none;
   }
 }
 
-/* CSS for smaller screens */
-.menu {
-  display: none; /* Hide the menu items by default for smaller screens */
-}
-
-.menu.active {
-  display: flex; /* Display the menu items when the menu is active */
-  flex-direction: column; /* Display the menu items as a column */
-}
-
-/* CSS for larger screens */
 #original-navbar {
-  display: flex; /* Display the navbar as a flexbox for larger screens */
+  display: flex;
 }
 
-/* CSS for smaller screens */
 @media (max-width: 767px) {
   #original-navbar {
-    display: none; /* Hide the navbar for smaller screens */
+    display: none;
   }
 }
 
-/* Initial CSS for the navbar */
 .navbar {
   position: relative;
 }
 
 .menu {
-  display: none; /* Hide the menu by default */
+  display: none;
   position: absolute;
-  top: 100%; /* Position the menu below the navbar */
+  top: 100%;
   left: 0;
   background-color: black;
   padding: 10px;
@@ -418,7 +350,6 @@ img.demo {
   text-decoration: none;
 }
 
-/* CSS to show the menu when the burger bar is clicked */
 .navbar.active .menu {
   display: block;
 }
