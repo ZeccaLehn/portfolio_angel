@@ -252,8 +252,8 @@ img.demo {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px; /* Adjust the padding as needed */
-  height: 100%;
+  padding-right: 15px; /* Add extra padding to the right */
+  padding-bottom: 15px; /* Add extra padding to the bottom */
   overflow: visible; /* Ensure shadows aren't clipped */
 }
 
@@ -265,8 +265,9 @@ img.demo {
 
 /* Add .demo class style here */
 .demo {
-  margin: 5px; /* Add margin to create space for shadows */
-  width: 80%; /* Adjust the width if necessary */
+  margin-right: 5px; /* Add margin to the right */
+  margin-bottom: 5px; /* Add margin to the bottom */
+  width: 80%; /* Adjust width if necessary */
   height: auto; /* Maintain aspect ratio */
   object-fit: contain;
 }
