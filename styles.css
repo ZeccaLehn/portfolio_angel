@@ -126,7 +126,7 @@ a {
   justify-content: space-between; /* Centers content vertically */
   position: relative; /* Ensure that shadows are rendered properly */
   z-index: 1; /* Increase the z-index */
-  transform: translateZ(0); /* Forces the browser to create a new layer */
+  transform: translateZ(0); /* Forces new rendering layer */
   will-change: transform; /* Helps with rendering optimization */
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* For iOS Safari */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adds a box shadow with specified values */
@@ -138,6 +138,7 @@ a {
     min-width: 100%; /* Set the minimum width to 100% for narrow screens */
   }
 }
+
 
 .card h3 {
   font-size: 18px; /* Sets the font size for the heading inside the card */
