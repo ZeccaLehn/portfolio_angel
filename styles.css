@@ -34,11 +34,12 @@ body {
 }
 
 #project-container {
-  display: flex; /* Displays the project container as a flex container */
-  flex-wrap: wrap; /* Allows the projects to wrap to the next line */
-  justify-content: center; /* Centers the projects horizontally */
-  gap: 10px; /* Sets the gap between the projects */
-  padding: 100px; /* Adds padding to the project container */
+  overflow: visible; /* Ensure shadows of cards are not clipped */
+  display: flex; /* Maintain flex layout */
+  flex-wrap: wrap; /* Allow wrapping of child elements */
+  justify-content: center; /* Center child elements */
+  gap: 10px; /* Add gap between child elements */
+  padding: 100px; /* Maintain padding */
 }
 
 .container {
