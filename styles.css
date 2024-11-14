@@ -255,11 +255,11 @@ img.demo {
 }
 
 .zoom img {
-  padding: 10px; /* Adds space inside the image element */
-  margin: 0; /* Ensure no additional margin */
-  width: calc(100% - 20px); /* Adjusts width to account for padding */
-  height: auto;
-  object-fit: cover;
+  width: 80%; /* Makes the image smaller */
+  height: auto; /* Maintains the aspect ratio */
+  object-fit: cover; /* Keeps the image from distorting */
+  margin: 0 auto; /* Centers the image */
+  padding: 5px; /* Optional padding for space */
 }
 
 
