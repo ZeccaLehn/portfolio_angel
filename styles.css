@@ -261,6 +261,14 @@ img.demo {
   object-fit: contain; /* Ensure the image is resized to fit within the container */
 }
 
+/* Add .demo class style here */
+.demo {
+  width: 80%; /* Adjust the width of the image as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits within the container */
+  margin: 0 auto; /* Center the image within its parent */
+}
+
 
 /* CSS styles */
 .navbar {
