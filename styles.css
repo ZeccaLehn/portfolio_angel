@@ -123,7 +123,7 @@ a {
   width: auto; /* Ensure the card can adjust naturally */
   height: auto; /* Set a fixed height for the card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adds a box shadow with specified values */
-  min-width: 275px; /* Set the minimum width for the card */
+  /* min-width: 275px; Set the minimum width for the card */
   
   /* Media query for narrow browser width */
   @media (max-width: 600px) {
