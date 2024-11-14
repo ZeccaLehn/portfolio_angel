@@ -113,7 +113,7 @@ a {
 }
 
 .card {
-  padding: 15px; /* Decrease the padding to reduce the overall size of the card */
+  padding: 15px; /* Decrease the padding to reduce overall size of the card */
   flex: 1 0 calc(25% - 30px); /* Adjust the flex property to control card width */
   margin: 10px; /* Increase margin to create more space around the card */
   border-radius: 8px; /* Adds border radius to the card */
@@ -125,6 +125,9 @@ a {
   flex-direction: column; /* Sets the flex direction to column */
   justify-content: space-between; /* Centers content vertically */
   position: relative; /* Ensure that shadows are rendered properly */
+  z-index: 1; /* Increase the z-index */
+  transform: translateZ(0); /* Forces the browser to create a new layer */
+  will-change: transform; /* Helps with rendering optimization */
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* For iOS Safari */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adds a box shadow with specified values */
   width: auto; /* Ensure the card can adjust naturally */
@@ -135,7 +138,6 @@ a {
     min-width: 100%; /* Set the minimum width to 100% for narrow screens */
   }
 }
-
 
 .card h3 {
   font-size: 18px; /* Sets the font size for the heading inside the card */
