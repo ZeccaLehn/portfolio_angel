@@ -107,6 +107,10 @@ a {
   font-family: Arial, sans-serif; /* Sets the font family for the links */
 }
 
+.card-container {
+  overflow: visible; /* Ensure shadows are not clipped */
+}
+
 .card {
   padding: 15px; /* Decrease the padding to reduce overall size of the card */
   flex: 1 0 calc(25% - 30px); /* Adjust the flex property to control card width */
