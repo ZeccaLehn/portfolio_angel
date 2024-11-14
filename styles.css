@@ -249,17 +249,16 @@ img.demo {
 }
 
 .zoom {
-  padding: 10px; /* Adds space around the image */
-  display: inline-block; /* Ensures the padding is applied around the image */
-  transition: transform 300ms ease; /* Smooth transition for the zoom effect */
+  display: flex; /* Use flex to center the image */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  padding: 10px; /* Add padding around the image if needed */
 }
 
 .zoom img {
-  width: 80%; /* Makes the image smaller */
-  height: auto; /* Maintains the aspect ratio */
-  object-fit: cover; /* Keeps the image from distorting */
-  margin: 0 auto; /* Centers the image */
-  padding: 5px; /* Optional padding for space */
+  width: 90%; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fits without distortion */
 }
 
 
