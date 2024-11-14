@@ -249,11 +249,12 @@ img.demo {
 }
 
 .zoom {
-  display: flex; /* Use flex to make the container a flexbox */
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
-  padding: 10px; /* Add padding around the image for spacing */
-  height: 100%; /* Ensure the container takes up the full height of its parent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px; /* Adjust the padding as needed */
+  height: 100%;
+  overflow: visible; /* Ensure shadows aren't clipped */
 }
 
 .zoom img {
@@ -264,10 +265,10 @@ img.demo {
 
 /* Add .demo class style here */
 .demo {
-  width: 80%; /* Adjust the width of the image as needed */
+  margin: 5px; /* Add margin to create space for shadows */
+  width: 80%; /* Adjust the width if necessary */
   height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensure the image fits within the container */
-  margin: 0 auto; /* Center the image within its parent */
+  object-fit: contain;
 }
 
 
