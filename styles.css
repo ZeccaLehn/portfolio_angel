@@ -115,13 +115,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center content within the card */
+  align-items: center;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 8px; /* Maintain rounded edges */
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   width: auto;
   height: auto;
+  overflow: hidden; /* Ensure content stays within bounds */
 }
 
 .card h3 {
@@ -144,10 +145,12 @@ a {
 
 .zoom {
   display: flex;
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
-  width: 100%; /* Ensure it takes the full width of the parent */
-  height: 100%; /* Ensure it takes the full height of the parent */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevent overflow that may clip shadows */
+  border-radius: 8px; /* Match the card's rounded edges */
 }
 
 .zoom:hover img {
@@ -165,8 +168,9 @@ a {
 .demo {
   max-width: 90%; /* Adjust as needed */
   max-height: 90%; /* Adjust as needed */
-  object-fit: contain; /* Ensure the image scales properly */
-  margin: auto; /* Center the image */
+  object-fit: contain;
+  margin: auto;
+  border-radius: 8px; /* Apply rounded edges to the image */
 }
 
 img.demo {
