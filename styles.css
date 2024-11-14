@@ -154,8 +154,7 @@ a {
   display: flex;
   justify-content: center; /* Center the image horizontally */
   align-items: center; /* Center the image vertically */
-  overflow: hidden; /* Hide any overflow if necessary */
-  padding: 0; /* Remove any excess padding */
+  height: 100%; /* Ensure the container takes the full available height */
 }
 
 .zoom:hover img {
@@ -172,8 +171,8 @@ a {
 
 .demo {
   max-width: 100%; /* Ensure the image does not exceed the container width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensure the image fits within the container */
+  max-height: 100%; /* Ensure the image does not exceed the container height */
+  object-fit: contain; /* Maintain aspect ratio and ensure the image fits within the container */
 }
 
 img.demo {
