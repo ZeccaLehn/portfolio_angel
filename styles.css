@@ -120,6 +120,7 @@ a {
   flex-direction: column; /* Sets the flex direction to column */
   justify-content: space-between; /* Centers content vertically */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adds a box shadow with specified values */
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* For iOS Safari */
   min-width: 300px; /* Set the minimum width for the card */
   height: 100%; /* Set a fixed height for the card */
 
