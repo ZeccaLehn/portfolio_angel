@@ -249,16 +249,16 @@ img.demo {
 }
 
 .zoom {
-  display: flex; /* Use flex to center the image */
+  display: flex; /* Use flex to make the container a flexbox */
   justify-content: center; /* Center the image horizontally */
   align-items: center; /* Center the image vertically */
-  padding: 10px; /* Add padding around the image if needed */
+  padding: 10px; /* Add padding around the image for spacing */
 }
 
 .zoom img {
-  width: 90%; /* Adjust the size as needed */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure the image fits without distortion */
+  width: 80%; /* Adjust the width of the image as needed */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: contain; /* Ensure the image is resized to fit within the container */
 }
 
 
