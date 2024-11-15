@@ -7,7 +7,7 @@ header {
 }
 
 body {
-  font-family: 'Play', sans-serif;  /* Sets the font family for the body */
+  font-family: 'Play', sans-serif; /* Sets the font family for the body */
   font-size: 15px; /* Sets the font size for the body */
   line-height: 1; /* Sets the line height for the body */
   color: #333; /* Sets the color of the text in the body */
@@ -39,6 +39,7 @@ body {
   justify-content: center; /* Centers the projects horizontally */
   gap: 10px; /* Sets the gap between the projects */
   padding: 100px; /* Adds padding to the project container */
+  overflow: visible; /* Ensures shadows of child elements are not clipped */
 }
 
 .container {
@@ -58,9 +59,8 @@ body {
 
 .title-block {
   text-align: left; /* Aligns the title to the left */
-  margin-left: 0px; /* Adds a buffer on the left side */
+  margin-left: 50px; /* Adds a buffer on the left side */
   margin-right: 50px; /* Adds a buffer on the right side */
-  margin-left: 50px; /* Overrides the previous margin-left */
   margin-bottom: 10px; /* Adds margin to separate from social icons */
 }
 
@@ -78,7 +78,6 @@ h1 {
   margin: 10px; /* Adds margin around the logo image */
 }
 
-/* CSS styles */
 .navbar {
   display: flex; /* Displays the navbar items in a row */
   align-items: center; /* Vertically aligns the navbar items */
@@ -123,13 +122,13 @@ a {
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* For iOS Safari */
   min-width: 300px; /* Set the minimum width for the card */
   height: 100%; /* Set a fixed height for the card */
+  overflow: visible; /* Ensures shadows are not clipped */
 
   /* Media query for narrow browser width */
   @media (max-width: 600px) {
     min-width: 100%; /* Set the minimum width to 100% for narrow screens */
   }
 }
-
 
 .card h3 {
   font-size: 18px; /* Sets the font size for the heading inside the card */
@@ -149,23 +148,26 @@ a {
   margin-bottom: 10px; /* Adds margin to the bottom of the content inside the card */
 }
 
-.card img.demo {
-  border-radius: 30px; /* Adds border radius to the demo image */
-  width: 100%; /* Sets the width of the demo image to 100% */
-  height: 100%; /* Sets the height of the demo image to 100% */
-  object-fit: cover; /* Maintains aspect ratio and covers the entire space */
+.zoom {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  overflow: visible; /* Ensure shadows are not clipped */
+  padding: 0; /* Adjust padding as needed */
 }
 
-@media (max-width: 650px) {
-  .card {
-    width: 100%; /* Sets the width of the card to 100% on smaller screens */
-  }
+.zoom img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  max-height: 100%; /* Maintain aspect ratio */
+  object-fit: contain; /* Maintain aspect ratio */
+  border-radius: 8px; /* Ensure image corners are rounded */
 }
 
 img.demo {
   filter: brightness(150%); /* Adjusts the brightness of the demo image */
   filter: contrast(120%); /* Adjusts the contrast of the demo image */
   filter: drop-shadow(5px 5px 5px rgb(55, 54, 54)); /* Adds a drop shadow to the demo image */
+  margin: 0 auto; /* Center image */
 }
 
 .tag {
@@ -183,207 +185,5 @@ img.demo {
 }
 
 .card img {
-  border-radius: 0px; /* Removes the border radius from the card image */
-  width: 70%; /* Sets the width of the card image to 100% */
-  height: auto; /* Sets the height of the card image to auto */
-  margin-bottom: 5px; /* Adds margin to the bottom of the card image */
-}
-
-@media (min-width: 300px) {
-  .card {
-    min-width: 300px; /* Sets the minimum width for cards on larger screens */
-  }
-}
-
-/* Media query for small screens */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column; /* Changes the direction to vertical stack on small screens */
-    padding: 20px; /* Adds padding to the navbar for better spacing */
-  }
-
-  .navbar a {
-    margin-bottom: 10px; /* Adds bottom margin between the navbar links on small screens */
-  }
-}
-
-
-/* Fix for Galaxy Fold */
-@media only screen and (max-width: 800px) {
-  .card {
-    width: 100%; /* Sets the width of the card to 100% on Galaxy Fold */
-    max-width: 300%; /* Adjusts the max-width property */
-    width: 700px; /* Adjusts the width for Galaxy Fold */
-  }
-}
-
-@keyframes wiggle {
-  0% { transform: rotate(0deg); }
-  20% { transform: rotate(-20deg); }
-  40% { transform: rotate(-10deg); }
-  60% { transform: rotate(-0deg); }
-  80% { transform: rotate(10deg); }
-  100% { transform: rotate(0deg); }
-}
-
-
-/* Shake SVG adapted from https://codepen.io/Digitango/pen/YQQBXR */
-.wiggle:hover svg {
-  animation: wiggle 10ms infinite; /* Adds a wiggle animation to the SVG on hover */
-  animation-timing-function: linear; /* Sets the timing function for the animation */
-}
-
-.zoom:hover img {
-  transform: scale(1.03);
-  transition: all ease 300ms;
-}
-
-/* CSS styles */
-.navbar {
-  display: flex; /* Displays the navbar items in a row */
-  align-items: center; /* Vertically aligns the navbar items */
-}
-
-.burger {
-  display: flex; /* Displays the burger icon as a flex container */
-  align-items: center; /* Vertically aligns the burger icon */
-  cursor: pointer; /* Changes the cursor to a pointer on hover */
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  left: 20px; /* Move to the left by 20px */
-  transform: translate(-50%, -50%);
-  margin-right: 20px;
-  left: calc(50% - 20px); /* Shift to the left by 20px */
-
-}
-
-.burger-icon {
-  width: 24px; /* Sets the width of the burger icon */
-  height: 24px; /* Sets the height of the burger icon */
-  fill: #333; /* Sets the color of the burger icon */
-}
-
-.burger-menu {
-  position: absolute;
-  top: 100%; /* Position the menu below the burger bar */
-  left: 0;
-  z-index: 999; /* Set a high z-index value to ensure the menu appears above other elements */
-  background-color: #fff; /* Adjust the background color as needed */
-  padding: 10px; /* Add padding to the menu for spacing */
-  display: none; /* Hide the menu by default */
-}
-
-.burger:hover + .burger-menu {
-  display: block; /* Show the menu when hovering over the burger bar */
-}
-
-.menu {
-  display: none; /* Hides the menu items by default */
-  list-style-type: none; /* Removes the default bullet points */
-  padding: 0; /* Removes padding from the menu */
-  margin: 0; /* Removes margin from the menu */
-}
-
-.menu li {
-  margin-bottom: 10px; /* Adds bottom margin between the menu items */
-}
-
-.menu li a {
-  color: #333; /* Sets the color of the menu links */
-  text-decoration: none; /* Removes underline from the menu links */
-}
-
-/* Media query for small screens */
-@media (max-width: 600px) {
-  .menu {
-    display: block; /* Displays the menu items as a vertical list on small screens */
-  }
-
-  .burger {
-    margin-right: 10px; /* Adds right margin between the burger icon and menu on small screens */
-  }
-}
-
-
-/* CSS for larger screens */
-.top-bar .burger-bar {
-  display: none; /* Hide the burger bar by default for larger screens */
-}
-
-/* CSS for larger screens */
-.menu {
-  display: flex; /* Display the menu items as a row by default */
-}
-
-/* CSS for smaller screens */
-@media (max-width: 768px) {
-  .menu {
-    display: none; /* Hide the menu items by default for smaller screens */
-  }
-
-  .menu.active {
-    display: flex; /* Display the menu items when the menu is active */
-    flex-direction: column; /* Display the menu items as a column */
-  }
-}
-
-/* CSS for larger screens */
-@media (min-width: 768px) {
-  .burger {
-    display: none; /* Hide the burger bar for larger screens */
-  }
-}
-
-/* CSS for smaller screens */
-.menu {
-  display: none; /* Hide the menu items by default for smaller screens */
-}
-
-.menu.active {
-  display: flex; /* Display the menu items when the menu is active */
-  flex-direction: column; /* Display the menu items as a column */
-}
-
-/* CSS for larger screens */
-#original-navbar {
-  display: flex; /* Display the navbar as a flexbox for larger screens */
-}
-
-/* CSS for smaller screens */
-@media (max-width: 767px) {
-  #original-navbar {
-    display: none; /* Hide the navbar for smaller screens */
-  }
-}
-
-/* Initial CSS for the navbar */
-.navbar {
-  position: relative;
-}
-
-.menu {
-  display: none; /* Hide the menu by default */
-  position: absolute;
-  top: 100%; /* Position the menu below the navbar */
-  left: 0;
-  background-color: black;
-  padding: 10px;
-  list-style-type: none;
-  width: 100%;
-}
-
-.menu li {
-  margin-bottom: 10px;
-}
-
-.menu li a {
-  color: white;
-  text-decoration: none;
-}
-
-/* CSS to show the menu when the burger bar is clicked */
-.navbar.active .menu {
-  display: block;
-}
+  border-radius: 8px; /* Adds rounded corners to images */
+  width: 100%; /* Ensures the image fits within the card
