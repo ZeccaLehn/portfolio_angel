@@ -105,6 +105,7 @@ a {
 }
 
 .card {
+<<<<<<< HEAD
   padding: 15px; /* Padding inside card */
   flex: 1 0 calc(25% - 30px); /* Card width control */
   margin: 3px; /* Space around card */
@@ -121,6 +122,22 @@ a {
   min-width: 300px; /* Minimum width */
   height: 100%; /* Full height */
   overflow: visible; /* Ensures shadows aren't clipped */
+=======
+  padding: 15px; /* Decrease the padding to reduce overall size of the card */
+  flex: 1 0 calc(25% - 30px); /* Adjust the flex property to control card width */
+  margin: 3px; /* Sets margin around the card */
+  border-radius: 8px; /* Adds border radius to the card */
+  border: 11px solid black; /* Adds a black border to the card */
+  max-width: calc(21% - 30px); /* Overrides the previous max-width */
+  box-sizing: border-box; /* Includes border and padding in the total width and height */
+  background-color: #fff; /* Sets the background color of the card */
+  display: flex; /* Displays the card as a flex container */
+  flex-direction: column; /* Sets the flex direction to column */
+  justify-content: space-between; /* Centers content vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adds a box shadow with specified values */
+  min-width: 300px; /* Set the minimum width for the card */
+  height: 100%; /* Set a fixed height for the card */
+>>>>>>> parent of 0d5c21d (Safari fix)
 
   /* For small screens */
   @media (max-width: 600px) {
