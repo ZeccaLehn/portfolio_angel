@@ -105,9 +105,9 @@ a {
 }
 
 .card {
-  padding: 15px; /* Padding inside card */
+  padding: 20px; /* Padding inside card */
   flex: 1 0 calc(25% - 30px); /* Card width control */
-  margin: 3px; /* Space around card */
+  margin: 10px; /* Space around card */
   border-radius: 8px; /* Rounded corners */
   border: 11px solid black; /* Border */
   max-width: calc(21% - 30px); /* Width */
@@ -130,7 +130,7 @@ a {
 
 .card h3 {
   font-size: 18px;
-  margin: 10px 0 5px 0;
+  margin: 25px 0 5px 0;
 }
 
 .card-content {
@@ -154,9 +154,46 @@ a {
   display: block; /* Removes inline spacing */
 }
 
-@media (max-width: 650px) {
+/* Ensure cards maintain size at 600px and below */
+@media (max-width: 600px) {
   .card {
-    width: 100%;
+    min-width: 300px; /* Minimum width for cards */
+    width: 300px; /* Fixed width to prevent resizing */
+  }
+
+  #project-container {
+    display: flex; /* Maintain flex layout */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center cards */
+  }
+
+  .container {
+    margin: 20px; /* Reduces margin for smaller screens */
+  }
+
+  .navbar, .menu, .top-bar {
+    padding: 10px; /* Reduces padding for smaller screens */
+  }
+
+  .burger {
+    position: absolute;
+    top: 0; /* Keep the burger menu at the top */
+    left: 10px; /* Align to the left side */
+    transform: translate(0, 0); /* Remove centering transform */
+  }
+
+  .burger-menu {
+    top: 40px; /* Position menu below the burger bar */
+  }
+
+  .zoom img {
+    width: 90%; /* Adjust image size within the card */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .socials {
+    flex-wrap: wrap; /* Allow social icons to wrap */
+    justify-content: center; /* Center icons if wrapped */
   }
 }
 
