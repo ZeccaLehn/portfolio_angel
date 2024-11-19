@@ -105,26 +105,32 @@ a {
 }
 
 .card {
-  padding: 25px; /* Increase padding for a larger content area */
-  flex: 1 0 calc(30% - 40px); /* Adjust flex-basis for larger width */
-  margin: 20px; /* Increase margin for spacing */
-  border-radius: 8px; /* Maintain rounded corners */
-  border: 15px solid black; /* Increase border size */
-  max-width: calc(28% - 40px); /* Adjust max-width for larger cards */
-  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  padding: 25px; /* Increase padding for more space inside */
+  flex: 1 0 calc(33% - 40px); /* Adjust width, reduce the percentage to increase size */
+  margin: 20px; /* Add more margin for spacing */
+  border-radius: 8px; /* Keep border radius */
+  border: 11px solid black; /* Keep border size */
+  max-width: calc(30% - 40px); /* Increase max-width */
+  box-sizing: border-box; /* Include padding and border in size */
   background-color: #fff; /* Keep background color */
-  display: flex; /* Use flex layout */
+  display: flex; /* Flex layout */
   flex-direction: column; /* Vertical layout */
-  justify-content: space-between; /* Space out content evenly */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Add larger shadow */
-  -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* iOS shadow */
+  justify-content: space-between; /* Space content evenly */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Larger shadow */
+  -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* For iOS */
   min-width: 350px; /* Increase minimum width */
   height: auto; /* Flexible height */
 }
 
+@media (max-width: 900px) {
+  .card {
+    flex: 1 0 calc(45% - 20px); /* Adjust width for medium screens */
+  }
+}
+
 @media (max-width: 600px) {
   .card {
-    min-width: 100%; /* Full width for smaller screens */
+    flex: 1 0 100%; /* Full width for smaller screens */
   }
 }
 
