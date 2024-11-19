@@ -36,14 +36,15 @@ body {
   padding: 10px; /* Padding within the top bar */
 }
 
-/* Project container styling */
+/* Container holding all the cards */
 #project-container {
-  display: flex; /* Flex layout */
-  flex-wrap: wrap; /* Wraps items if needed */
-  justify-content: center; /* Centers content */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: center; /* Center the cards horizontally */
+  align-items: flex-start; /* Align items at the start */
   gap: 10px; /* Space between cards */
-  padding: 100px; /* Adds padding around the container */
-  overflow: visible; /* Ensures no clipping of shadows */
+  margin-top: 100px; /* Space below the header to ensure cards are visible */
+  padding: 20px; /* Optional padding for overall spacing */
 }
 
 /* Container spacing */
@@ -61,6 +62,22 @@ body {
 .social-icon svg {
   width: 25px; /* Icon width */
   height: 25px; /* Icon height */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+
+/* Define the keyframes for the wiggle animation */
+@keyframes wiggle {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Apply the wiggle animation on hover */
+.social-icon:hover svg {
+  animation: wiggle 0.5s ease-in-out;
 }
 
 /* Title block styling */
@@ -118,7 +135,7 @@ a {
 
 /* Card styling */
 .card {
-  padding: 15px; /* Inner padding */
+  padding: 10px; /* Inner padding */
   flex: 1 0 calc(25% - 30px); /* Flex size */
   margin: 3px; /* Margin around the card */
   border-radius: 8px; /* Rounded corners */
@@ -132,13 +149,14 @@ a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Box shadow */
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Safari shadow */
   min-width: 300px; /* Minimum width */
-  height: 100%; /* Full height */
+  height: auto; /* Allow the card to adjust height */
   overflow: visible; /* Prevents clipping */
-  position: relative; /* For absolute positioning */
+}
 
-  /* Responsive styling for smaller screens */
-  @media (max-width: 600px) {
-    min-width: 100%; /* Full width on small screens */
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .card {
+    min-width: 100%; /* Full width on smaller screens */
   }
 }
 
@@ -186,20 +204,23 @@ img.demo {
   filter: drop-shadow(5px 5px 5px rgb(55, 54, 54)); /* Drop shadow */
 }
 
-/* Tag styling */
-.tag {
-  display: inline-block; /* Inline block layout */
-  background-color: #f2f2f2; /* Background color */
-  color: #333; /* Text color */
-  padding: 4px 8px; /* Padding */
-  font-size: 12px; /* Font size */
-  margin-bottom: 4px; /* Margin below */
-  border-radius: 4px; /* Rounded corners */
+/* Tags container styling */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 5px;
+  flex-grow: 1; /* Allow tags to take available space */
 }
 
-/* Tag container styling */
-.tags {
-  white-space: nowrap; /* Prevents wrapping */
+.tag {
+  display: inline-block;
+  background-color: #f2f2f2; /* Background color for tags */
+  color: #333; /* Text color */
+  padding: 4px 8px; /* Padding inside the tag */
+  font-size: 12px; /* Font size */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 4px; /* Space below the tag */
 }
 
 /* Image styling within card */
@@ -266,3 +287,4 @@ img.demo {
   position: absolute; /* Absolute positioning */
   top: 50%; /* Center vertically */
   left: calc(50
+}
