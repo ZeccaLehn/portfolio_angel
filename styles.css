@@ -105,31 +105,26 @@ a {
 }
 
 .card {
-  position: relative; /* Create a containing block for absolute positioning */
-  padding: 25px; /* Adjust padding */
-  margin: 20px;
-  border-radius: 8px;
-  border: 11px solid black;
-  box-sizing: border-box;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-  min-width: 350px;
-  height: auto;
-}
+  padding: 15px; /* Padding inside card */
+  flex: 1 0 calc(25% - 30px); /* Card width control */
+  margin: 3px; /* Space around card */
+  border-radius: 8px; /* Rounded corners */
+  border: 11px solid black; /* Border */
+  max-width: calc(21% - 30px); /* Width */
+  box-sizing: border-box; /* Includes padding/border */
+  background-color: #fff; /* Background */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Vertical direction */
+  justify-content: space-between; /* Vertical spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow */
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* iOS Safari shadow */
+  min-width: 300px; /* Minimum width */
+  height: 100%; /* Full height */
+  overflow: visible; /* Ensures shadows aren't clipped */
 
-@media (max-width: 900px) {
-  .card {
-    flex: 1 0 calc(45% - 20px); /* Adjust width for medium screens */
-  }
-}
-
-@media (max-width: 600px) {
-  .card {
-    flex: 1 0 100%; /* Full width for smaller screens */
+  /* For small screens */
+  @media (max-width: 600px) {
+    min-width: 100%;
   }
 }
 
@@ -139,7 +134,10 @@ a {
 }
 
 .card-content {
-  margin-top: 100px; /* Add margin to create space for the floating image */
+  font-size: 12px;
+  line-height: 1.2;
+  height: 85px;
+  overflow: hidden;
 }
 
 .card p.card-content {
@@ -183,15 +181,10 @@ img.demo {
 }
 
 .card img {
-  position: absolute; /* Float the image above the card */
-  top: -20px; /* Adjust to move the image out of the card's top */
-  left: 50%; /* Center the image horizontally */
-  transform: translateX(-50%); /* Center alignment correction */
-  border-radius: 15px; /* Add rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Image shadow */
-  max-width: 80%; /* Adjust as needed */
+  border-radius: 0px;
+  width: 70%;
   height: auto;
-  z-index: 2; /* Ensure the image is above the card content */
+  margin-bottom: 5px;
 }
 
 @media (min-width: 300px) {
