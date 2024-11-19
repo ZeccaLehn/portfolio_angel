@@ -38,10 +38,10 @@ body {
 
 /* Container holding all the cards */
 #project-container {
+  align-items: stretch; /* Stretch cards to have equal height */
   display: flex; /* Use flexbox for layout */
   flex-wrap: wrap; /* Allow wrapping */
   justify-content: center; /* Center the cards horizontally */
-  align-items: flex-start; /* Align items at the start */
   gap: 10px; /* Space between cards */
   margin-top: 100px; /* Space below the header to ensure cards are visible */
   padding: 20px; /* Optional padding for overall spacing */
@@ -168,6 +168,7 @@ a {
 
 /* Card content styling */
 .card-content {
+  flex-grow: 1; /* Allow content to grow and occupy space */
   font-size: 12px; /* Font size */
   line-height: 1.2; /* Line height */
   height: 85px; /* Fixed height */
