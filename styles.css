@@ -104,7 +104,6 @@ a {
   font-family: Arial, sans-serif; /* Font family */
 }
 
-
 .card {
   position: relative; /* Create a containing block for absolute positioning */
   padding: 25px; /* Adjust padding */
@@ -118,8 +117,7 @@ a {
   justify-content: space-between;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-  min-width: 360px; /* Increase minimum width by 20% */
-  min-height: 450px; /* Increase height to make card size larger */
+  min-width: 350px;
   height: auto;
 }
 
@@ -141,7 +139,7 @@ a {
 }
 
 .card-content {
-  margin-top: 120px; /* Add margin to create space for the floating image */
+  margin-top: 100px; /* Add margin to create space for the floating image */
 }
 
 .card p.card-content {
@@ -194,7 +192,6 @@ img.demo {
   max-width: 80%; /* Adjust as needed */
   height: auto;
   z-index: 2; /* Ensure the image is above the card content */
-  margin-bottom: 15px; /* Create a buffer between the image and the text below */
 }
 
 @media (min-width: 300px) {
