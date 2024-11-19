@@ -105,21 +105,20 @@ a {
 }
 
 .card {
-  padding: 25px; /* Increase padding for more space inside */
-  flex: 1 0 calc(33% - 40px); /* Adjust width, reduce the percentage to increase size */
-  margin: 20px; /* Add more margin for spacing */
-  border-radius: 8px; /* Keep border radius */
-  border: 11px solid black; /* Keep border size */
-  max-width: calc(30% - 40px); /* Increase max-width */
-  box-sizing: border-box; /* Include padding and border in size */
-  background-color: #fff; /* Keep background color */
-  display: flex; /* Flex layout */
-  flex-direction: column; /* Vertical layout */
-  justify-content: space-between; /* Space content evenly */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Larger shadow */
-  -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* For iOS */
-  min-width: 350px; /* Increase minimum width */
-  height: auto; /* Flexible height */
+  position: relative; /* Create a containing block for absolute positioning */
+  padding: 25px; /* Adjust padding */
+  margin: 20px;
+  border-radius: 8px;
+  border: 11px solid black;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  min-width: 350px;
+  height: auto;
 }
 
 @media (max-width: 900px) {
@@ -140,10 +139,7 @@ a {
 }
 
 .card-content {
-  font-size: 12px;
-  line-height: 1.2;
-  height: 85px;
-  overflow: hidden;
+  margin-top: 100px; /* Add margin to create space for the floating image */
 }
 
 .card p.card-content {
@@ -187,10 +183,15 @@ img.demo {
 }
 
 .card img {
-  border-radius: 0px;
-  width: 70%;
+  position: absolute; /* Float the image above the card */
+  top: -20px; /* Adjust to move the image out of the card's top */
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Center alignment correction */
+  border-radius: 15px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Image shadow */
+  max-width: 80%; /* Adjust as needed */
   height: auto;
-  margin-bottom: 5px;
+  z-index: 2; /* Ensure the image is above the card content */
 }
 
 @media (min-width: 300px) {
