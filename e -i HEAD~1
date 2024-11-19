@@ -1,0 +1,199 @@
+[33mcommit 3924d8d6b454fb8f0b032f5c4c91cee14b4a8f62[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mrepairBranch[m[33m, [m[1;31morigin/repairBranch[m[33m)[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Mon Nov 18 17:38:18 2024 -0800
+
+    Card Fixes 11/18 2
+
+[33mcommit 10369f49fdbd41ade3846da1e7c28d3aa2e60a55[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Mon Nov 18 17:33:05 2024 -0800
+
+    Card Fixes 11/18 1
+
+[33mcommit b63069421cc0eafe6fbf43267d307caa39bbd3e2[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Mon Nov 18 17:23:44 2024 -0800
+
+    Card Fixes 11/18
+
+[33mcommit 0c9f940ced89cc347f6ab1cd2df3802d12717a5b[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Mon Nov 18 17:21:39 2024 -0800
+
+    Card Fixes 11/18
+
+[33mcommit 3b29bf5a89f202b3a536680d19020999330d5462[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Mon Nov 18 17:19:56 2024 -0800
+
+    Card Fixes 11/18
+
+[33mcommit e6e528478204f50165c25291802bb19e44c84265[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Thu Nov 14 17:36:21 2024 -0800
+
+    Revert "Safari fix"
+    
+    This reverts commit 0d5c21d8bda43611bcb305742a613996f6b58602.
+
+[33mcommit 8b4896e5f92b1b81e7d85483b1cb1e73ceb5f01a[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Thu Nov 14 17:23:44 2024 -0800
+
+    Update Safari Code 4
+
+[33mcommit 63233ddf5bd5e28b4123ccd3c7dff3dee9cd6db9[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Thu Nov 14 17:08:23 2024 -0800
+
+    Update Safari Code 2
+
+[33mcommit 049dffdefd60694e11f0e0c88fdf8226b3f37ef2[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Thu Nov 14 17:02:55 2024 -0800
+
+    Update Safari Code 1
+
+[33mcommit 0d5c21d8bda43611bcb305742a613996f6b58602[m[33m ([m[1;32mtest[m[33m)[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Wed Nov 13 16:03:57 2024 -0800
+
+    Safari fix
+
+[33mcommit 40c1cb81f8498cf10cc00647c53bd54717575c97[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Sun May 28 17:58:43 2023 -0700
+
+    Fix meta data again
+
+[33mcommit a6595c8aba116aa0e5fa49f76bea0876f1975609[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Sun May 28 17:25:55 2023 -0700
+
+    Change metadata
+
+[33mcommit 017f33ab13cdc9a0f5b59721136a0a3a8864b7d3[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Tue May 23 08:03:29 2023 -0700
+
+    More cards and fixes
+
+[33mcommit 90e358bae78f796d18f018bfbe6df52118858b4e[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Tue May 23 06:12:09 2023 -0700
+
+    Jpeg and CSS changes
+
+[33mcommit 57c33e0d2577c36b51fe241de2c98789d68613cf[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Sun May 21 17:46:33 2023 -0700
+
+    Fix and add cards
+
+[33mcommit d9aeff28965ab60644092f60ac9f7be35f1c3cc2[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Sat May 20 08:26:03 2023 -0700
+
+    "Changs index and css for mobile changes"
+
+[33mcommit a5cea4bc703debbb5e8adcb469da5883390856a5[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Sat May 20 08:23:02 2023 -0700
+
+    Modified index and styles to fix cards and phone
+
+[33mcommit f05ace6de5ce314e60ae8b83e02a8625aec062fe[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Thu May 18 18:13:08 2023 -0700
+
+    Clear jiggle from mobile
+
+[33mcommit 1ec94c5db9d5dc886b60057566bd307aee6e0d97[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Thu May 18 18:05:17 2023 -0700
+
+    Add website
+
+[33mcommit de3f3a9aa0cd2da615082545395dfceaf3ac7253[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Thu May 18 18:01:31 2023 -0700
+
+    Delete records for base view
+
+[33mcommit acba33ad28e150b4df555111444153abd2764f56[m
+Author: Zecca Lehn <Zgit@outlook.com>
+Date:   Thu May 18 15:44:03 2023 -0700
+
+    Create CNAME
+
+[33mcommit d8bef284a01fa3ec5ee3c649ef2f74b9054b602c[m
+Author: Zecca Lehn <Zgit@outlook.com>
+Date:   Thu May 18 15:16:57 2023 -0700
+
+    Delete CNAME
+
+[33mcommit 026c519c47682144825697bf5fd46f909af9c8fd[m
+Author: Zecca Lehn <Zgit@outlook.com>
+Date:   Thu May 18 15:12:18 2023 -0700
+
+    Create CNAME
+
+[33mcommit 0708b7ed9130bc1982134a38bdfbaa1cbc29cfd7[m
+Author: Zecca Lehn <Zgit@outlook.com>
+Date:   Thu May 18 15:11:59 2023 -0700
+
+    Delete CNAME
+
+[33mcommit f527d1c1d8d1f19638ec980b14b28130d8f9ad4c[m
+Author: Zecca Lehn <Zgit@outlook.com>
+Date:   Thu May 18 15:06:07 2023 -0700
+
+    Create CNAME
+
+[33mcommit 741e7c958a658e6c20a88ab30963d9e79eeadd93[m
+Author: Zecca Lehn <Zgit@outlook.com>
+Date:   Thu May 18 15:05:47 2023 -0700
+
+    Delete CNAME
+
+[33mcommit 000d6bbb21f9bdee73b9c6d68e2e2d3480b4849c[m
+Author: Zecca Lehn <Zgit@outlook.com>
+Date:   Thu May 18 14:58:54 2023 -0700
+
+    Create CNAME
+
+[33mcommit 8f0bef28ab662197926f37dfd6e0c398f6172eda[m
+Author: Zecca Lehn <Zgit@outlook.com>
+Date:   Thu May 18 14:25:24 2023 -0700
+
+    Delete CNAME
+
+[33mcommit 7c07435a70b3924d4618a2aacf5523bbcf3906e8[m
+Author: Zecca Lehn <Zgit@outlook.com>
+Date:   Thu May 18 14:13:05 2023 -0700
+
+    Create CNAME
+
+[33mcommit 442470d7164d17f1bb556e47ae4a02c5170b6105[m
+Author: Zecca Lehn <Zgit@outlook.com>
+Date:   Thu May 18 13:51:51 2023 -0700
+
+    Delete CNAME
+
+[33mcommit 39a3f9eec83b7235ef82ab2e8f80e077215a905b[m
+Author: Zecca Lehn <Zgit@outlook.com>
+Date:   Thu May 18 13:50:58 2023 -0700
+
+    Create CNAME
+
+[33mcommit dfd6e25da43e418da40287cd878f455b6f9dae91[m
+Author: ZeccaLehn <zgit@outlook.com>
+Date:   Thu May 18 13:47:34 2023 -0700
+
+    Initial test website
+
+[33mcommit 74a869f9d6ba10aa7cbdd53ac929b75e28dac6f4[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Zecca Lehn <Zgit@outlook.com>
+Date:   Thu May 18 09:33:45 2023 -0700
+
+    Initial commit
