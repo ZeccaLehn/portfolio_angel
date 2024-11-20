@@ -7,6 +7,23 @@ header {
   min-height: 70px; /* Ensures minimum header height */
 }
 
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in class to apply the animation */
+.fade-in {
+  animation: fadeIn 1s ease-out forwards; /* Animates opacity and transform */
+}
+
 /* General body styling */
 body {
   font-family: 'Play', sans-serif; /* Sets font for the body */
@@ -135,6 +152,9 @@ a {
 
 /* Card styling */
 .card {
+  opacity: 0; /* Start cards as invisible */
+  animation: fadeIn 1s ease-out forwards; /* Animate opacity and position */
+  animation-delay: 0.2s; /* Delay to stagger each card (adjust as needed) */
   padding: 10px; /* Inner padding */
   flex: 1 0 calc(25% - 30px); /* Flex size */
   margin: 3px; /* Margin around the card */

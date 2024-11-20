@@ -127,3 +127,17 @@ burger.addEventListener('click', function() {
   menu.classList.toggle('active');
 });
 
+// Fade in for cards
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all cards
+  const cards = document.querySelectorAll(".card");
+
+  // Apply the animation with a delay for each card
+  cards.forEach((card, index) => {
+    card.style.animationDelay = `${index * 0.5}s`; // Stagger the fade-in delay
+    card.classList.add("fade-in"); // Add fade-in class
+  });
+});
+
+
+
