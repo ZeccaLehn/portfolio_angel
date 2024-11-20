@@ -11,17 +11,16 @@ header {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }
 
 /* Fade-in class to apply the animation */
 .fade-in {
-  opacity: 0; /* Hidden initially */
   animation: fadeIn 1s ease-out forwards; /* Animates opacity and transform */
 }
 
@@ -72,25 +71,15 @@ body {
 
 /* Social icons styling */
 .socials {
-  /* background-color: rgb(253, 251, 251);  */
   display: flex; /* Flex layout */
   gap: 5px; /* Space between icons */
   margin-right: auto; /* Aligns to the right */
-  
 }
 
 .social-icon svg {
   width: 25px; /* Icon width */
   height: 25px; /* Icon height */
-  opacity: 0; /* Initially hidden */
-  /* transition: opacity 0.3s ease-in-out; Smooth reveal */
-  
-  transition: transform 0.3s ease-in-out; /*Smooth transition for hover effect*/
-}
-
-/* Show SVGs when loaded */
-.loaded .social-icon svg {
-  opacity: 1; /* Show SVGs after loading */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
 
