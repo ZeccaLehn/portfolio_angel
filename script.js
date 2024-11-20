@@ -111,6 +111,11 @@ document.querySelector('.burger').addEventListener('click', function() {
   document.querySelector('.menu').classList.toggle('active');
 });
 
+// SVG reveal
+window.addEventListener('load', function() {
+  document.body.classList.add('loaded'); // Adds the `loaded` class to reveal SVGs
+});
+
 // JavaScript to toggle the menu active class
 const burgerBar = document.querySelector('.burger-bar');
 const menu = document.querySelector('.menu');
@@ -138,6 +143,8 @@ document.addEventListener("DOMContentLoaded", function () {
     card.classList.add("fade-in"); // Add fade-in class
   });
 });
+
+
 
 
 
