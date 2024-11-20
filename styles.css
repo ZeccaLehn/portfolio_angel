@@ -300,8 +300,7 @@ img.demo {
   display: flex; /* Flex layout */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  /* padding: 10px; No padding */
-  padding: 15px 10px 15px 10px; /* top, right, bottom, left */
+  padding: 0; /* No padding */
 }
 
 /* Image inside zoom container */
